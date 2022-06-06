@@ -121,6 +121,10 @@ nav {
 
 /* ===== change navbar style on scroll */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .window-scroll {
     background: var(--primary-color);
     box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
@@ -991,4 +995,38 @@ footer ul li a:hover {
     cursor: pointer;
     margin-left: 25px;
     color: var( --color-white);
+}
+
+
+/* Data-Science-course */
+
+.buy-course-section {
+    margin-top: 0;
+}
+
+.buy-course-container {
+    grid-template-columns: 1fr;
+}
+
+.buy-course {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+}
+
+.buy-course p {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.buy-course-section .price {
+    top: 0;
+    left: 15px;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--warning-color);
+    z-index: 10;
+    font-family: "poppins", sans-serif;
+    border-bottom: 2px solid var(--success-color);
+    margin-bottom: 20px;
 }

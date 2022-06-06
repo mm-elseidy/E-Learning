@@ -1,0 +1,257 @@
+.navbar .profile-img {
+    position: relative;
+}
+
+.navbar .profile-img img {
+    width: 40px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.navbar .profile {
+    position: absolute;
+    width: 200px;
+    top: 65px;
+    right: 110px;
+    background: var( --primary-color);
+    padding: 10px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar .profile.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar .profile img {
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar .profile li {
+    display: flex;
+    padding: 5px 0;
+}
+
+.navbar .profile li a {
+    display: inline-block;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.navbar .profile li a:hover {
+    color: var(--danger-color);
+    padding-left: 3px;
+    text-decoration: underline;
+}
+
+
+/* --------------- user datatable ---------------- */
+
+.user-profile>h2 {
+    margin: 0;
+    margin-top: 75px;
+}
+
+.user-profile .user-icon {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    color: var(--danger-color);
+}
+
+.user-profile .table-container {
+    background: var(--color-light);
+    color: var(--color-black);
+    margin: 40px auto 0;
+}
+
+.user-profile .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.curve_chart {
+    background: var(--color-light);
+}
+
+.user-profile .table thead {
+    background: var(--primary-color);
+}
+
+.user-profile .table thead tr th {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid var(--color-black);
+}
+
+.table tbody tr td {
+    font-size: 15px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--color-black);
+}
+
+@media(max-width: 1024px) {
+    .navbar .profile {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 830px) {
+    .user-profile .table thead {
+        display: none;
+    }
+    .user-profile .table,
+    .user-profile .table tbody,
+    .user-profile .table tr,
+    .user-profile .table td {
+        display: block;
+        width: 100%;
+    }
+    .user-profile .table tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .user-profile .table-container {
+        background: transparent;
+    }
+    .user-profile .table tbody tr {
+        margin-top: 30px;
+        background: var(--color-white);
+    }
+    .user-profile .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+.user-profile .curve_chart {
+    width: 100%;
+    height: 500px;
+    background: var(--color-white);
+    margin: 0 auto;
+}
+
+.table button a {
+    background: var(--danger-color);
+    color: var(--color-white);
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.table button a:hover {
+    background: var(--bg-color);
+}
+
+
+/* ******* user cs50 course ********* */
+
+.user-course {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.user-course .main-video {
+    background: var(--bg-color-2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.user-course .main-video video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.user-course .main-video .title {
+    color: var(--color-black);
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.user-course .video-list {
+    background: var(--bg-color-2);
+    border-radius: 5px;
+    height: 620px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.user-course .video-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.user-course .video-list::-webkit-scrollbar-track {
+    background: var(--primary-color);
+    border-radius: 50px;
+}
+
+.user-course .video-list::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--color-light);
+}
+
+.user-course .video-list .vid video {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.user-course .video-list .vid .title {
+    color: var(--color-black);
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.user-course .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--color-light);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.user-course .video-list .vid:hover {
+    background: #eee;
+}
+
+.user-course .video-list .vid.active {
+    background: var(--bg-color-1);
+}
+
+.user-course .video-list .vid.active .title {
+    color: var(--color-light);
+}
+
+@media(max-width: 991px) {
+    .user-course {
+        grid-template-columns: 1fr;
+    }
+}
