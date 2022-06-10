@@ -82,32 +82,184 @@
     <!-- End NavBar -->
 
 
-    <section class="container exam">
+    <section class="exam-container">
         <div class="user-exam">
-            <header>Your Exam No.[1]</header>
+            <header>Your Exam Number [1]</header>
 
             <form action="#">
 
                 <div class="form first">
-                    <div class="details personal">
+                    <div class="part-1">
                         <span class="title">Part One</span>
 
                         <div class="fields">
                             <div class="input-field">
-                                <label for="">Question Number One</label>
-                                <input type="text" placeholder="Write Your Answer" required>
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
                             </div>
+
                             <div class="input-field">
-                                <label for="">Question Number Two</label>
-                                <input type="text" placeholder="Write Your Answer" required>
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
                             </div>
+
                             <div class="input-field">
-                                <label for="">Question Number Three</label>
-                                <input type="text" placeholder="Write Your Answer" required>
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
                             </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="part-2">
+                        <span class="title">Part Two</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                        </div>
+
+                        <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                            <i class="fa-solid fa-angles-right"></i> </button>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form second">
+                    <div class="part-3">
+                        <span class="title">Part Three</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="part-4">
+                        <span class="title">Part Four</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Here You Have A Question</label>
+                                <input type="text" placeholder="Enter your Answer" required>
+                            </div>
+
+                        </div>
+
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <i class="fa-solid fa-angles-left"></i>
+                                <span class="btnText">Back</span>
+                            </div>
+
+                            <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="fa-solid fa-angles-right"></i> 
+                        </button>
                         </div>
                     </div>
                 </div>
+
 
             </form>
 
@@ -250,7 +402,27 @@
     </script>
 
 
+    <script>
+        //----------  Exam Form Change ----------- //
 
+        const form = document.querySelector("form"),
+            nextBtn = document.querySelector(".nextBtn"),
+            backBtn = document.querySelector(".backBtn"),
+            allInput = document.querySelectorAll(".first input");
+
+        nextBtn.addEventListener("click", () => {
+            allInput.forEach((input) => {
+                if (input.value != "") {
+                    form.classList.add("secActive");
+                } else {
+                    form.classList.remove("secActive");
+                }
+            });
+        });
+
+
+        backBtn.addEventListener('click', () => form.classList.remove("secActive"))
+    </script>
 </body>
 
 </html>
