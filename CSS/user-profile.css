@@ -908,6 +908,11 @@ form .backBtn i {
         font-weight: normal;
         text-align: left;
     }
+    .boxs.questions .box.questions .user h5 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-right: 5px;
+    }
 }
 
 
