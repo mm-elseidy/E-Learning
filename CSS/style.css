@@ -98,6 +98,7 @@ img {
     transition: var(--transition);
     background: var(--danger-color);
     color: var(--color-white);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -999,7 +1000,7 @@ footer ul li a:hover {
 /* Data-Science-course */
 
 .buy-course-section {
-    margin-top: 0;
+    margin-top: 5rem;
 }
 
 .buy-course-container {
@@ -1027,4 +1028,91 @@ footer ul li a:hover {
     font-family: "poppins", sans-serif;
     border-bottom: 2px solid var(--success-color);
     margin-bottom: 20px;
+}
+
+.buy-course-container #popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #00bf8fba;
+    width: 450px;
+    padding: 50px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.5);
+    transition: var(--transition);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.buy-course-container #popup.active {
+    visibility: visible;
+    top: 50%;
+}
+
+.buy-course-container #popup .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buy-course-container #popup .content h4 {
+    font-size: 20px;
+    color: var(--bg-color);
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 0;
+}
+
+.buy-course-container #popup .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.buy-course-container #popup .input i {
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--success-color);
+}
+
+.buy-course-container #popup .submit-btn input {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: var(--danger-color);
+    width: fit-content;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.buy-course-container #popup .submit-btn:hover input {
+    background: var(--warning-color);
+    color: var(--bg-color);
+}
+
+.buy-course-container #popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+    color: var(--bg-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.buy-course-container #popup .close:hover {
+    color: var(--danger-color);
 }
