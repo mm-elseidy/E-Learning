@@ -6,8 +6,6 @@ window.addEventListener("scroll", () => {
         .classList.toggle("window-scroll", window.scrollY > 100);
 });
 
-
-
 // Tablet Show/Hide NavBar
 
 const menu = document.querySelector(".nav-menu");
@@ -30,9 +28,6 @@ const closeNav = () => {
 
 closeBtn.addEventListener("click", closeNav);
 
-
-
-
 // =====> Show The Answer p <===== //
 
 const question = document.querySelectorAll(".question");
@@ -50,9 +45,6 @@ question.forEach((question) => {
         }
     });
 });
-
-
-
 
 // Testimonials Slider
 

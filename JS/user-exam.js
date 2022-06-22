@@ -10,18 +10,16 @@ var duartion = 0;
 var qaSet = document.querySelectorAll(".qa-set");
 var qaAnsRow = document.querySelectorAll(".qa-set .qa-ans-row input");
 
-
 skip.addEventListener("click", function() {
     step();
     duartion = 30;
 });
 
-
 qaAnsRow.forEach(function(qaAnsRowSingle) {
     qaAnsRowSingle.addEventListener("click", function() {
         setTimeout(function() {
             step();
-            duartion = 30
+            duartion = 30;
         }, 1000);
 
         var valid = this.getAttribute("valid");
@@ -34,10 +32,8 @@ qaAnsRow.forEach(function(qaAnsRowSingle) {
             score.innerHTML = scoreCount;
             totalScore.innerHTML = scoreCount;
         }
-
     });
 });
-
 
 function step() {
     count += 1;
@@ -59,7 +55,6 @@ var duartionTime = setInterval(function() {
     duartion += 1;
     countdown.innerHTML = duartion;
     if (countdown.innerHTML == "30") {
-        step()
+        step();
     }
-
-}, 1000)
+}, 1000);
