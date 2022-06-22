@@ -17,11 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <style>
-        .courses {
-            margin-top: 1rem;
-        }
-    </style>
+
 
     <title>CS50 Course</title>
 </head>
@@ -71,15 +67,39 @@
                 <div class="course-info">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, porro. Velit temporibus culpa eligendi hic, dicta itaque veritatis odit dolores voluptate ratione aspernatur quibusdam eveniet!</p>
                     <div class="price">99$</div>
-                    <a href="cs50-course.html" class="btn-primary btn">Buy Now</a>
+                    <a class="btn-primary btn" onclick="popupToggle();">Buy Now</a>
                 </div>
             </article>
+
+            <div id="popup">
+                <div class="content">
+                    <h4>Enter your phone number to confirm the transfer</h4>
+                </div>
+
+                <div class="input">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" placeholder="Phone Number" id="mob" required>
+                </div>
+                <div class="submit-btn">
+                    <input type="submit" value="Submit">
+                </div>
+
+                <div class="close" onclick="popupToggle();">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
 
         </div>
     </section>
 
 
-
+    <script>
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
 
 
     <!-- Start Footer -->
