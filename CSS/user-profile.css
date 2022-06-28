@@ -436,6 +436,7 @@ nav button {
 
 .community .head .btn {
     margin: 15px 0;
+    cursor: pointer;
 }
 
 .community .head h3 {
@@ -732,7 +733,7 @@ nav button {
     padding: 7px 15px;
 }
 
-.community.single-question #popup {
+.community .head #popup {
     position: fixed;
     top: -100%;
     left: 50%;
@@ -747,12 +748,12 @@ nav button {
     visibility: hidden;
 }
 
-.community.single-question #popup.active {
+.community .head #popup.active {
     visibility: visible;
     top: 50%;
 }
 
-.community.single-question #popup .content h4 {
+.community .head #popup .content h4 {
     font-size: 20px;
     color: var(--bg-color);
     line-height: 1.5;
@@ -760,30 +761,30 @@ nav button {
     padding-top: 0;
 }
 
-.community.single-question #popup .input {
+.community .head #popup .input {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
 }
 
-.community.single-question #popup .input select {
+.community .head #popup .input select {
     padding: 5px;
 }
 
-.community.single-question #popup .input input {
+.community .head #popup .input input {
     padding: 5px;
     width: 100%;
 }
 
-.community.single-question #popup .input textarea {
+.community .head #popup .input textarea {
     padding: 5px;
     width: 100%;
     max-height: 150px;
     resize: none;
 }
 
-.community.single-question #popup .submit-btn input {
+.community .head #popup .submit-btn input {
     padding: 10px 25px;
     border-radius: 25px;
     font-size: 20px;
@@ -798,12 +799,12 @@ nav button {
     transition: var(--transition);
 }
 
-.community.single-question #popup .submit-btn:hover input {
+.community .head #popup .submit-btn:hover input {
     background: var(--warning-color);
     color: var(--bg-color);
 }
 
-.community.single-question #popup .close {
+.community .head #popup .close {
     position: absolute;
     top: 5px;
     right: 15px;
@@ -813,7 +814,7 @@ nav button {
     cursor: pointer;
 }
 
-.community.single-question #popup .close:hover {
+.community .head #popup .close:hover {
     color: var(--danger-color);
 }
 
@@ -828,7 +829,7 @@ nav button {
         font-weight: normal;
         margin-right: 5px;
     }
-    .community.single-question #popup {
+    .community .head #popup {
         width: 330px;
     }
 }
