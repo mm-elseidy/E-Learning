@@ -83,110 +83,150 @@
             <h2>Our Community, Welcome!</h2>
             <div class="user-icon"> <i class="fa-solid fa-group-arrows-rotate"></i></div>
             <div class="btn">
-                <a href="">Post New Question</a><i class="fa-solid fa-pen-to-square"></i>
+                <a onclick="popupToggle();">Post New Question</a><i class="fa-solid fa-pen-to-square"></i>
             </div>
             <h3>Choose the class to share and see its questions</h3>
-        </div>
-        <div class="container">
-            <div class="boxs">
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class One</h5>
-                    <div class="q-btn">
-                        <a href="class-one-q.html">Questions : 13</a>
-                    </div>
+
+            <div id="popup">
+                <div class="content">
+                    <h4>Add Your Question Here</h4>
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Two</h5>
-                    <div class="q-btn">
-                        <a href="class-two-q.html">Questions : 22</a>
-                    </div>
+                <div class="input">
+                    <select>
+                        <option value="">Choose The Class</option>
+
+                            <option value="">Class One</option>
+                            <option value="">Class Two</option>
+                            <option value="">Class Three</option>
+                            <option value="">Class Four</option>
+                            <option value="">Class Five</option>
+                            <option value="">Class Six</option>
+                            <option value="">Class Seven</option>
+                            <option value="">Class Eight</option>
+                    </select>
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Three</h5>
-                    <div class="q-btn">
-                        <a href="class-three-q.html">Questions : 19</a>
-                    </div>
+                <div class="input">
+                    <input type="text" placeholder="Write The Blog Title" required>
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Four</h5>
-                    <div class="q-btn">
-                        <a href="class-four-q.html">Questions : 32</a>
-                    </div>
+
+                <div class="input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Five</h5>
-                    <div class="q-btn">
-                        <a href="class-five-q.html">Questions : 28</a>
-                    </div>
+                <div class="input">
+                    <input type="file">
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Six</h5>
-                    <div class="q-btn">
-                        <a href="class-six-q.html">Questions : 43</a>
-                    </div>
+                <div class="submit-btn">
+                    <input type="submit" value="Submit">
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Seven</h5>
-                    <div class="q-btn">
-                        <a href="class-seven-q.html">Questions : 15</a>
-                    </div>
+                <div class="close" onclick="popupToggle();">
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
 
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-file-circle-question"></i>
-                    </div>
-                    <h5>Class Eight</h5>
-                    <div class="q-btn">
-                        <a href="class-eight-q.html">Questions : 10</a>
-                    </div>
-                </div>
 
             </div>
-        </div>
+            <div class="container">
+                <div class="boxs">
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class One</h5>
+                        <div class="q-btn">
+                            <a href="class-one-q.html">Questions : 13</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Two</h5>
+                        <div class="q-btn">
+                            <a href="class-two-q.html">Questions : 22</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Three</h5>
+                        <div class="q-btn">
+                            <a href="class-three-q.html">Questions : 19</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Four</h5>
+                        <div class="q-btn">
+                            <a href="class-four-q.html">Questions : 32</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Five</h5>
+                        <div class="q-btn">
+                            <a href="class-five-q.html">Questions : 28</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Six</h5>
+                        <div class="q-btn">
+                            <a href="class-six-q.html">Questions : 43</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Seven</h5>
+                        <div class="q-btn">
+                            <a href="class-seven-q.html">Questions : 15</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-circle-question"></i>
+                        </div>
+                        <h5>Class Eight</h5>
+                        <div class="q-btn">
+                            <a href="class-eight-q.html">Questions : 10</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
     </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
+    <script>
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
 
     <!-- Start Footer -->
     <footer>
