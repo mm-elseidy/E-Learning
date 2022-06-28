@@ -727,6 +727,96 @@ nav button {
     font-weight: normal;
 }
 
+.community.single-question .btn {
+    cursor: pointer;
+    padding: 7px 15px;
+}
+
+.community.single-question #popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #00bf8fba;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.5);
+    transition: var(--transition);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.community.single-question #popup.active {
+    visibility: visible;
+    top: 50%;
+}
+
+.community.single-question #popup .content h4 {
+    font-size: 20px;
+    color: var(--bg-color);
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 0;
+}
+
+.community.single-question #popup .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.community.single-question #popup .input select {
+    padding: 5px;
+}
+
+.community.single-question #popup .input input {
+    padding: 5px;
+    width: 100%;
+}
+
+.community.single-question #popup .input textarea {
+    padding: 5px;
+    width: 100%;
+    max-height: 150px;
+    resize: none;
+}
+
+.community.single-question #popup .submit-btn input {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: var(--danger-color);
+    width: fit-content;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.community.single-question #popup .submit-btn:hover input {
+    background: var(--warning-color);
+    color: var(--bg-color);
+}
+
+.community.single-question #popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+    color: var(--bg-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.community.single-question #popup .close:hover {
+    color: var(--danger-color);
+}
+
 @media (max-width: 500px) {
     .community.single-question .head .content h4 {
         font-size: 18px;
@@ -737,6 +827,9 @@ nav button {
         font-size: 14px;
         font-weight: normal;
         margin-right: 5px;
+    }
+    .community.single-question #popup {
+        width: 330px;
     }
 }
 
